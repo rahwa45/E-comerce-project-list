@@ -1,9 +1,9 @@
-import express, { Router } from "express";
+import express from "express";
 
-const route = express();
-route.get("/", (req, res) => {
-  res.send(200).json({
+const router = express();
+router.get("/", (req, res) => {
+  res.status(200).json({
     message: "Everything is okay",
   });
 });
-export default route;
+export default router;
